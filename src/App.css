@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 80rem;
+  padding-inline: 2rem;
+  padding-block-start: 2rem;
+  text-align: center;
+}
+
+.main {
+  max-width: 22.5rem;
+  margin: auto;
+  margin-bottom: 0rem;
+  background: #0B2434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 20rem;
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  background-color: gainsboro;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 1.25rem;
+}
+
+.diceElements {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(5, 2.2rem);
+  grid-template-rows: repeat(2, 2.2rem);
+  column-gap: 1.12rem;
+  row-gap: 1.12rem;
+  place-content: center;
+  user-select: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .diceElements {
+    grid-template-columns: repeat(4, 2.2rem);
+    grid-template-rows: repeat(3, 2.2rem);
+  }
+}
+
+@media only screen and (max-width: 334px) {
+  .diceElements {
+    grid-template-columns: repeat(3, 2.2rem);
+    grid-template-rows: repeat(4, 2.2rem);
+  }
+}
+
+.number {
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Karla';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #2B283A;
+}
+
+.button {
+  width: 5.8rem;
+  height: 2.5rem;
+  background-color: blanchedalmond;
+  border-radius: 0.3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1rem;
+}
